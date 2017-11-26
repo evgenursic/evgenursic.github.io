@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html >
 <head>
+
   <meta charset="UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Personal portfolio page">
+  <meta name="author" content="Eugene Ursich">
+
   <title>Portfolio page</title>
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
@@ -11,6 +19,8 @@
   <head>
   <title>Portfolio page | Eugene Ursich</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat" rel="stylesheet">
 </head>
 
 <body>
@@ -22,9 +32,9 @@
       <nav>
         <ul>
           <li class="current"><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#showcase">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -44,62 +54,148 @@
       </form>
     </div>
   </section>
+
   <section id="boxes">
     <div class="container">
       <h1>Building responsive websites using:</h1>
       <div class="box">
         <img class="pic1" src="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png">
         <h3>HTML5</h3>
-        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
       </div>
       <div class="box">
         <img src="https://seeklogo.com/images/C/css3-logo-FD8D698B77-seeklogo.com.png">
         <h3>CSS3</h3>
-        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
       </div>
       <div class="box">
         <img src="https://camo.githubusercontent.com/4f455d6ec9b49d8d79e1a9ea922fdf10109717e0/68747470733a2f2f7261772e6769746875622e636f6d2f766f6f646f6f74696b69676f642f6c6f676f2e6a732f6d61737465722f73706563696669632d757365732f62616467655f6a732d7374726963742e706e67">
         <h3>Javascript</h3>
-        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
       </div>
       <div class="box">
         <img div class="pic2" src="https://ng-bootstrap.github.io/img/logo.svg">
         <h3>Bootstrap</h3>
-        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
       </div>
     </div>
   </section>
-  <section id="contact">
-    <div class="container">
-      <h3>Contact form</h3>
-      <p>Get in touch with me. Would love to help you.</p>
-    <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
-	<div class="row">
-		<label for="name"></label><br />
-		<input id="name" class="input" name="name" type="text" placeholder="Name" value="" size="120" /><br />
-	</div>
-	<div class="row">
-		<label for="email"></label><br />
-		<input id="email" class="input" name="email" type="text" placeholder="E-mail" value="" size="120" /><br />
-	</div>
-  <div class="row">
-		<label for="subject"></label><br />
-		<input id="subject" class="input" name="subject" type="text" placeholder="Subject" value="" size="120" /><br />
-	</div>
-	<div class="row">
-		<label for="message"></label><br />
-		<textarea id="message" class="input" name="message" placeholder="Message" rows="7" cols="120"></textarea><br />
-	</div>
-	<input id="submit_button" type="submit" value="Submit" />
-</form>
+
+  <section class="container" id="portfolio">
+    <h1>Portfolio</h1>
+    <p>__________</p>
+    <div class="row">
+      <figure class="col-sm-6">
+        <img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/kitchen.jpg">
+      </figure>
+      <figure class="col-sm-6">
+        <img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/woodwork.jpg">
+      </figure>
+    </div>
+    <div class="row">
+      <figure class="col-sm-6">
+        <img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/gifts.jpg">
+      </figure>
+      <figure class="col-sm-6">
+        <img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/antique.jpg">
+      </figure>
     </div>
   </section>
-  <footer>
-    <p>Eugene Ursich Copyright &copy; 2017</p>
-  </footer>
-</body>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js'></script>
 
+  </section>
+  <section id="contact">
+    <div class="container">
+
+      <h3>Contact me</h3>
+      <p>_____________</p>
+
+    <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+
+    <div class="row">
+		  <label for="name"></label><br />
+		  <input id="name" class="input" name="name" type="text" placeholder="Name" value="" size="116" /><br />
+	  </div>
+
+    <div class="row">
+		  <label for="email"></label><br />
+		  <input id="email" class="input" name="email" type="text" placeholder="E-mail" value="" size="116" /><br />
+	</div>
+
+  <div class="row">
+		<label for="subject"></label><br />
+		<input id="subject" class="input" name="subject" type="text" placeholder="Subject" value="" size="116" /><br />
+	</div>
+
+  <div class="row">
+		<label for="message"></label><br />
+		<textarea id="message" class="input" name="message" placeholder="Message" rows="7" cols="119"></textarea><br />
+	</div>
+
+
+  <div class="row">
+    <input id="submit_button" type="submit" value="Send" />
+  </div>
+
+  </form>
+</div>
+  </section>
+  <footer class="footer text-center">
+     <div class="container">
+       <div class="row">
+         <div class="col-md-4 mb-5 mb-lg-0">
+           <h4 class="text-uppercase mb-4">Location</h4>
+           <h5>_____________</h5>
+           <p class="lead mb-0">Dovško 67a
+             <br>8281 Senovo <br>Slovenia <br>Europe</p>
+         </div>
+         <div class="col-md-4 mb-5 mb-lg-0">
+           <h4 class="text-uppercase mb-4">Social media</h4>
+           <ul class="list-inline mb-0">
+
+           </li>
+           <li class="list-inline-item">
+             <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.linkedin.com/in/evgen-ur%C5%A1i%C4%8D-60042b17/" target="_blank">
+               <i class="fa fa-fw fa-linkedin"></i>
+             </a>
+           </li>
+
+         </li>
+         <li class="list-inline-item">
+           <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://github.com/evgenursic" target="_blank">
+             <i class="fa fa-fw fa-github"></i>
+           </a>
+         </li>
+
+             <li class="list-inline-item">
+               <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.facebook.com/ZaposlitveneMoznosti/" target="_blank">
+                 <i class="fa fa-fw fa-facebook"></i>
+               </a>
+
+             <li class="list-inline-item">
+               <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://twitter.com/evgenursic" target="_blank">
+                 <i class="fa fa-fw fa-twitter"></i>
+               </a>
+
+             <li class="list-inline-item">
+               <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.instagram.com/evgenursic/" target="_blank">
+                 <i class="fa fa-fw fa-instagram"></i>
+               </a>
+             </li>
+           </ul>
+         </div>
+         <div class="col-md-4">
+           <h4 class="text-uppercase mb-4">About me</h4>
+           <h5>____________</h5>
+           <p class="lead mb-0">Eager to learn new frameworks and putting them into action through real problem solving projects.</p>
+         </div>
+       </div>
+     </div>
+   </footer>
+
+   <div class="copyright py-4 text-center text-red">
+     <div class="container">
+       <small>Copyright &copy; Eugene Ursich 2017</small>
+     </div>
+   </div>
+</body>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js'></script>
 
 </body>
 </html>
