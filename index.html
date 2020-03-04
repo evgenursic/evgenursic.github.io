@@ -1,199 +1,280 @@
 <!DOCTYPE html>
-<html >
-
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-  <meta charset="UTF-8">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Personal portfolio page">
-  <meta name="author" content="Eugene Ursich">
 
-  <title>Portfolio page</title>
-  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css'>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="style.css">
+   <!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Evgen Ursic</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+   <!-- Mobile Specific Metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
+
+   <!-- Script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
+
+   <!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="favicon.png" >
+
 </head>
 
 <body>
-  <head>
-  <title>Portfolio page | Eugene Ursich</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat" rel="stylesheet">
-</head>
-<body>
 
-  <header>
-    <div class="container">
-      <div id="branding">
-        <h1><span class="highlight">| </span>Eugene Ursich</h1>
-      </div>
-      <nav>
-        <ul>
-          <li class="current"><a href="index.html">Home</a></li>
-          <li><a href="#showcase">About</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+   <!-- Header
+   ================================================== -->
+   <header id="home">
 
-  <section id="showcase">
-    <div class="container">
-      <h1>Passionate web and mobile developer</h1>
-      <p>Front End Development | Data Visualization | Back End Development | Real-Life Projects | Full Stack Development </p>
-    </div>
-  </section>
+      <nav id="nav-wrap">
 
-  <section id="newsletter">
-    <div class="container">
-      <h1>Subscribe to my newsletter for new portfolio projects</h1>
-      <form>
-        <input type="email" placeholder="Enter e-mail...">
-        <button type="submit" class="button1">Subscribe</button>
-      </form>
-    </div>
-  </section>
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
 
-  <section id="boxes">
-    <div class="container">
-      <h1>Building responsive websites using:</h1>
-      <div class="box">
-        <img class="pic1" src="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png">
-      </div>
-      <div class="box">
-        <img src="https://seeklogo.com/images/C/css3-logo-FD8D698B77-seeklogo.com.png">
-      </div>
-      <div class="box">
-        <img src="https://camo.githubusercontent.com/4f455d6ec9b49d8d79e1a9ea922fdf10109717e0/68747470733a2f2f7261772e6769746875622e636f6d2f766f6f646f6f74696b69676f642f6c6f676f2e6a732f6d61737465722f73706563696669632d757365732f62616467655f6a732d7374726963742e706e67">
-      </div>
-      <div class="box">
-        <img div class="pic2" src="https://ng-bootstrap.github.io/img/logo.svg">
-      </div>
-    </div>
-  </section>
-
-  <section class="container" id="portfolio">
-    <h1>Portfolio</h1>
-    <p>__________</p>
-    <div class="row">
-      <figure class="col-sm-6">
-        <img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/kitchen.jpg">
-      </figure>
-      <figure class="col-sm-6">
-        <img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/woodwork.jpg">
-      </figure>
-    </div>
-    <div class="row">
-      <figure class="col-sm-6">
-        <img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/gifts.jpg">
-      </figure>
-      <figure class="col-sm-6">
-        <img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/antique.jpg">
-      </figure>
-    </div>
-  </section>
-
-  </section>
-  <section id="contact">
-    <div class="container">
-
-      <h3>Contact me</h3>
-      <p>_____________</p>
-
-    <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
-
-    <div class="row">
-		  <label for="name"></label><br />
-		  <input id="name" class="input" name="name" type="text" placeholder="Name" value="" size="116" /><br />
-	  </div>
-
-    <div class="row">
-		  <label for="email"></label><br />
-		  <input id="email" class="input" name="email" type="text" placeholder="E-mail" value="" size="116" /><br />
-	</div>
-
-  <div class="row">
-		<label for="subject"></label><br />
-		<input id="subject" class="input" name="subject" type="text" placeholder="Subject" value="" size="116" /><br />
-	</div>
-
-  <div class="row">
-		<label for="message"></label><br />
-		<textarea id="message" class="input" name="message" placeholder="Message" rows="7" cols="119"></textarea><br />
-	</div>
+         <ul id="nav" class="nav">
+            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
+            <li><a class="smoothscroll" href="#about">About me</a></li>
+	         <li><a class="smoothscroll" href="#resume">CV</a></li>
 
 
-  <div class="row">
-    <input id="submit_button" type="submit" value="Send" />
-  </div>
 
-  </form>
-</div>
-  </section>
-  <footer class="footer text-center">
-     <div class="container">
-       <div class="row">
-         <div class="col-md-4 mb-5 mb-lg-0">
-           <h4 class="text-uppercase mb-4">Location</h4>
-           <h5>_____________</h5>
-           <p class="lead mb-0">Dovško 67a
-             <br>8281 Senovo <br>Slovenia <br>Europe</p>
+         </ul> <!-- end #nav -->
+
+      </nav> <!-- end #nav-wrap -->
+
+      <div class="row banner">
+         <div class="banner-text">
+            <h1 class="responsive-headline">Hello! I'm Eugene </h1>
+            <h3>I'm currently employed as a <span>employment counsellor</span>, but always on a lookout for new <span>knowledge</span>. Became intrigued by <span>Python</span> which became my passion.
+            Data analytics, big data and <span>data science</span> was my next step. <br> You can find more
+            about me down bellow in my <a class="smoothscroll" href="#about">presentation</a>.</h3>
+            <hr />
+            <ul class="social">
+               <li><a href="https://twitter.com/evgenursic" target="_blank"><i class="fa fa-twitter"></i></a></li>
+               <li><a href="https://si.linkedin.com/in/evgenursic" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="https://www.instagram.com/evgenursic/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            </ul>
          </div>
-         <div class="col-md-4 mb-5 mb-lg-0">
-           <h4 class="text-uppercase mb-4">Social media</h4>
-           <ul class="list-inline mb-0">
+      </div>
 
-           </li>
-           <li class="list-inline-item">
-             <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.linkedin.com/in/evgen-ur%C5%A1i%C4%8D-60042b17/" target="_blank">
-               <i class="fa fa-fw fa-linkedin"></i>
-             </a>
-           </li>
+      <p class="scrolldown">
+         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+      </p>
 
-         </li>
-         <li class="list-inline-item">
-           <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://github.com/evgenursic" target="_blank">
-             <i class="fa fa-fw fa-github"></i>
-           </a>
-         </li>
+   </header> <!-- Header End -->
 
-             <li class="list-inline-item">
-               <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.facebook.com/ZaposlitveneMoznosti/" target="_blank">
-                 <i class="fa fa-fw fa-facebook"></i>
-               </a>
 
-             <li class="list-inline-item">
-               <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://twitter.com/evgenursic" target="_blank">
-                 <i class="fa fa-fw fa-twitter"></i>
-               </a>
+   <!-- About Section
+   ================================================== -->
+   <section id="about">
 
-             <li class="list-inline-item">
-               <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.instagram.com/evgenursic/" target="_blank">
-                 <i class="fa fa-fw fa-instagram"></i>
-               </a>
-             </li>
-           </ul>
+      <div class="row">
+
+         <div class="three columns">
+
+            <img class="profile-pic"  src="images/profilepic.jpg" alt="" />
+
          </div>
-         <div class="col-md-4">
-           <h4 class="text-uppercase mb-4">About me</h4>
-           <h5>____________</h5>
-           <p class="lead mb-0">Eager to learn new frameworks and putting them into action through real problem solving projects.</p>
-         </div>
-       </div>
-     </div>
-   </footer>
 
-   <div class="copyright py-4 text-center text-red">
-     <div class="container">
-       <small>Copyright &copy; Eugene Ursich 2017</small>
-     </div>
-   </div>
+         <div class="nine columns main-col">
+
+            <h2>About Me</h2>
+
+            <p>Since 2012 I work as a employment counselor at Employment Service. I take my job with full responsability. I never thought that working mostly with people who needs support in life would fullfill and change my point of view in life.  
+Nevertheless I can never hide my passion towards new technologies and creative thinking that can help and change people's lifes.<br>
+
+I am currently looking for a new career opportunity. <br>
+
+Even in my primary school Senovo I was always attracted to computer lessons. Also remember my trip to science fair with a robot . As for myself I think I'm reliable, which means that every project that takes place in my life I think of myself as reliable, resourceful, hard
+working and passionate for my profession. Learning new things does not present a
+problem but a opportunity for deeper understanding.<br>
+
+Like spending my free time with my wife and two sons which I'm fully proud of. I take inspiration from them which makes every step or challenge in life much easier.
+
+            </p>
+
+            <div class="row">
+
+               <div class="columns contact-details">
+
+                  <h2>Contact</h2>
+                  <p class="address">
+						   <span>Evgen Ursic</span><br>
+						   <span>Dovsko 67a, <br>8281 Senovo, <br>Slovenia</span><br>
+						   <span>+386 41 443821</span><br>
+                     <span><a href="mailto:evgenursic@gmail.com?subject=">evgenursic@gmail.com</a></span>
+					   </p>
+
+               </div>
+
+         </div> <!-- end .main-col -->
+
+      </div>
+
+   </section> <!-- About Section End-->
+
+
+   <!-- Resume Section
+   ================================================== -->
+   <section id="resume">
+
+
+
+
+      <!-- Work----------------------------------------------- -->
+      <div class="row work">
+
+         <div class="three columns header-col">
+            <h1><span>Experiences</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>ZRSZ</h3>
+                  <p class="info">Employment counsellor<span>&bull;</span> <em class="date">June 2012 - Present</em></p>
+
+                  <p>
+                  Empowering people, motivate them to take chances in life, thinking outside of the box, so that they can give their best for future employers.                    
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Adamsoft d.o.o.</h3>
+                  <p class="info">Project manager<span>&bull;</span> <em class="date">October 2009 - July 2010</em></p>
+
+                  <p>
+                  Organizing, managing and coordinating the projects between customers and developers. Managing calls for proposals. Being in touch with the latest Near Field Communication technology. 
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Zavarovalnica Maribor d.d.</h3>
+                  <p class="info">Life insurance and investment policies controller<span>&bull;</span> <em class="date">April 2008 - October 2009</em></p>
+
+                  <p>
+                  Processing, tariffing, controlling and dispatching insurances
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>SRC.SI</h3>
+                  <p class="info">Asistant, analyst for analizing system solutions<span>&bull;</span> <em class="date">November 2007 - April 2008</em></p>
+
+                  <p>
+                 Implementation, education and customer support for specific system applications.
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+         </div> <!-- main-col end -->
+
+      </div> <!-- End Work -->
+
+      <!-- Education
+      ----------------------------------------------- -->
+      <div class="row education">
+
+         <div class="three columns header-col">
+            <h1><span>Courses</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <div class="row item">
+
+               <div class="twelve columns">
+                  <h3>Online Dataquest and Datacamp courses</h3>
+                  <p class="info">Python and data science<span>&bull;</span> <em class="date">In Progress</em></p>
+               </div>
+            </div> <!-- item end -->
+
+            <div class="row item">
+               <div class="twelve columns">
+                  <h3> ICT academy \ University of Ljubljana \ Faculty of Electrical Engineering</h3>    
+				  <p class="info">IoT Fundamentals: Big Data<span>&bull;</span> <em class="date">Fall 2019, duration: eight weeks</em></p>
+				  <p class="info">IoT Fundamentals: Data analytics in Python<span>&bull;</span> <em class="date">Spring 2019, duration: ten weeks</em></p>				  
+				  <p class="info">Programming Essentials in Python<span>&bull;</span> <em class="date">Fall 2018, duration: three months</em></p>
+               </div>
+            </div> <!-- item end -->
+
+         </div> <!-- main-col end -->
+
+      </div> <!-- End Education -->
+
+ </section> <!-- Resume Section End-->
+   <!-- footer
+   ================================================== -->
+   <footer>
+
+      <div class="row">
+
+         <div class="twelve columns">
+
+            <ul class="social-links">
+              <li><a href="https://www.facebook.com/profile.php?id=100009978163655" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://twitter.com/evgenursic" target="_blank"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://si.linkedin.com/in/evgenursic" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="https://www.instagram.com/evgenursic/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+
+
+
+         </div>
+
+         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+
+      </div>
+
+   </footer> <!-- Footer End-->
+
+   <!-- Java Script
+   ================================================== -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/waypoints.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/magnific-popup.js"></script>
+   <script src="js/init.js"></script>
+
 </body>
 
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js'></script>
-
-</body>
 </html>
